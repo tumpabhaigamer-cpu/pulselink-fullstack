@@ -1,10 +1,12 @@
 {
-  "name": "nextjs-postgresql-template",
+  "name": "pulselink-fullstack",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
@@ -13,7 +15,7 @@
     "drizzle-orm": "0.45.2",
     "fast-xml-parser": "^5.12.0",
     "lucide-react": "^1.70.0",
-    "next": "16.2.6",
+    "next": "16.4.6",
     "pg": "8.20.0",
     "qrcode.react": "^4.2.0",
     "react": "19.2.6",
@@ -26,11 +28,15 @@
     "@types/pg": "8.18.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "drizzle-kit": "0.31.10",
+    "drizzle-kit": "0.31.11",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.6",
-    "postcss": "8.5.8",
+    "eslint-config-next": "16.4.6",
+    "postcss": "8.5.32",
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3"
+  },
+  "overrides": {
+    "esbuild": "^0.25.12",
+    "minimatch": "^11.0.5"
   }
 }
